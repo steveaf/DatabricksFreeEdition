@@ -1,0 +1,85 @@
+ Databricks specific ignores
+# Ignores files and folders created by the VS Code Databricks extension
+.databricks/
+.bundle/
+
+# Python-specific ignores
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Databricks Connect
+.dbc-connect/
+*.whl
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage
+.coverage
+.coverage.*
+
+# Terraform-specific ignores
+# Ignores Terraform state files and backups
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfplan
+
+# Ignores the .terraform directory, which stores provider binaries and modules
+.terraform/
+.terraform.lock.hcl
+
+# Ignore all *.tfvars files if they contain sensitive data (like credentials)
+# A more secure practice is to use environment variables or a separate
+# credentials file managed securely.
+*.tfvars
+
+# Ignore user-specific CLI configuration files
+.terraformrc
+terraform.rc
+
+# OS-specific ignores
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
