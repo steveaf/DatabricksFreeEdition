@@ -5,6 +5,5 @@ The readme markdown for Databricks Free Edition demos.
 Databricks stuff
 
 ## Terraform
-
 Terraform stuff.
 
