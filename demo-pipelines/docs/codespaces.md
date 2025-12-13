@@ -29,7 +29,7 @@ Default is 4-core, 8GB RAM, 32 GB storage.
 
 
 
-
+YAY
 
 
 ## Configure
