@@ -1,0 +1,5 @@
+spark.sql("CREATE CATALOG IF NOT EXISTS demo_sdc_pipelines")
+spark.sql("CREATE SCHEMA IF NOT EXISTS demo_sdc_pipelines.public_data")
+spark.sql("CREATE VOLUME IF NOT EXISTS demo_sdc_pipelines.public_data.incoming_files COMMENT 'Volume for raw incoming data files'")
+spark.sql("CREATE VOLUME IF NOT EXISTS demo_sdc_pipelines.public_data.error_files COMMENT 'Volume for files that failed processing'")
+spark.sql("CREATE VOLUME IF NOT EXISTS demo_sdc_pipelines.public_data.done_files COMMENT 'Volume for successfully processed files'")
