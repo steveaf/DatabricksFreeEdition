@@ -1,6 +1,6 @@
 # Mermaid
 
-Mermaid creates diagrams in markdown.  I want to get quick with Mermaid so my md files are more valuable. 
+Mermaid creates diagrams in markdown.  I want to get quick with Mermaid so my md files are more valuable.  Changed!
 
 Test the diagram in the official Mermaid Live [Editor](https://mermaid.live/)
 
