@@ -1,0 +1,19 @@
+# This is a Databricks asset bundle definition for DatabricksFreeEdition-1.
+# The Databricks extension requires databricks.yml configuration file.
+# See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
+
+bundle:
+  name: DatabricksFreeEdition-1
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://dbc-811109e0-ad0d.cloud.databricks.com
+
+  ## Optionally, there could be 'staging' or 'prod' targets here.
+  #
+  # prod:
+  #   workspace:
+  #     host: https://dbc-811109e0-ad0d.cloud.databricks.com
