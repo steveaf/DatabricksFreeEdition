@@ -1,0 +1,44 @@
+
+bundle:
+  name: sdc-pipeline-bundle
+
+resources:
+  # Define the Catalog resource
+  catalogs:
+    demo-sdc-pipelines:
+      name: demo_sdc_pipelines
+      comment: "Catalog for SDC pipelines data"
+
+  # Define the Schema resource within the catalog
+  schemas:
+    public-data-schema:
+      name: public_data
+      catalog_name: demo_sdc_pipelines
+      comment: "Schema for public data in SDC pipelines"
+
+  # Define the Volumes within the schema
+  volumes:
+    incoming-volume:
+      name: incoming_files
+      catalog_name: demo_sdc_pipelines
+      schema_name: public_data
+      comment: "Volume for raw incoming data files"
+
+    error-volume:
+      name: error_files
+      catalog_name: demo_sdc_pipelines
+      schema_name: public_data
+      comment: "Volume for files that failed processing"
+      
+    done-volume:
+      name: done_files
+      catalog_name: demo_sdc_pipelines
+      schema_name: public_data
+      comment: "Volume for successfully processed files"
+
+# Define a target for deployment (e.g., "dev" or "production")
+# You will need to configure the host and authentication for this target in your .databrickscfg file
+targets:
+  development:
+    # Replace <your-workspace-host> with your actual Databricks workspace URL
+    host: https://https://dbc-811109e0-ad0d.cloud.databricks.com

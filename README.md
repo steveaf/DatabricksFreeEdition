@@ -20,24 +20,3 @@ Get your Databricks Personal Access Token.
 <div>
 ### Notes
 
-I want to use Podman for both a development experience and to spin and kill my personal servers.
-As I understand Podman is plug and play almost with Docker.  Docker has licensing issues that Podman does not.  
-
-Development:  Make a container for a scenario.
-Container: Dev for Databricks and Python
-* Install the best version of Python to use with your target version of Databricks. 
-* Install CLI tools for GitHub, the above DABS plugin, and whatever else is needed.
-* Have VS Code with Python, Databricks plugins, etc.  
-* Have Mermaid plugins.  Learn to use its markdown for diagrams.
-
-Container: Dev for SQL Server, Powershell
-
-Container: Dev for Postgres (Including PGAdmin...)
-
-Container: Server for Spark  (Run with Dev for Databricks, or ...)
-
-BUT - if work doesn't also have containers, your containers are only for home. 
-
-VS 
-
-Install everything locally and lose everything when you get another computer, work at work, etc. 
